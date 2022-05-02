@@ -12,13 +12,13 @@ package modelo;
 public class Ticket {
     private int numCamion;
     private String horaDeSalida;
-    private String horaDeLlegada;
+    //private String horaDeLlegada;
     private int numAsiento;
 
     public Ticket(int numCamion, String horaDeSalida, String horaDeLlegada, int numAsiento) {
         this.numCamion = numCamion;
         this.horaDeSalida = horaDeSalida;
-        this.horaDeLlegada = horaDeLlegada;
+
         this.numAsiento = numAsiento;
     }
     
@@ -42,13 +42,7 @@ public class Ticket {
         this.horaDeSalida = horaDeSalida;
     }
 
-    public String getHoraDeLlegada() {
-        return horaDeLlegada;
-    }
-
-    public void setHoraDeLlegada(String horaDeLlegada) {
-        this.horaDeLlegada = horaDeLlegada;
-    }
+    
 
     public int getNumAsiento() {
         return numAsiento;

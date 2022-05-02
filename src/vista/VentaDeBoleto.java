@@ -63,7 +63,7 @@ public class VentaDeBoleto extends javax.swing.JFrame {
         });
 
         ListaDestino.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ListaDestino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige el destino", "Faultad de Matematicas", "Facultad de Derecho", "Facultad de Medicina" }));
+        ListaDestino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige el destino", "Facultad de Matematicas", "Facultad de Derecho", "Facultad de Medicina" }));
 
         ListaHorario.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ListaHorario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige el horario", "6:00", "7:00", "8:00", "9:00" }));

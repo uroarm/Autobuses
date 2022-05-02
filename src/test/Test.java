@@ -4,9 +4,13 @@
  * and open the template in the editor.
  */
 package test;
+import controlador.ControladorTest;
 import modelo.Autobus;
 import vista.VentaDeBoleto;
 import controlador.ControladorVenta;
+import java.io.IOException;
+import java.util.ArrayList;
+import modelo.Destino;
 import vista.CambioDeBoleto;
 /**
  *
@@ -14,14 +18,17 @@ import vista.CambioDeBoleto;
  */
 public class Test {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
     
-        Autobus modelo =new Autobus();
-        VentaDeBoleto vista=new VentaDeBoleto();
-        CambioDeBoleto vista2=new CambioDeBoleto();
-        ControladorVenta controlador=new ControladorVenta(vista,modelo, vista2);
-        
-        vista.setVisible(true);
-    
+       
+        ControladorTest test = new ControladorTest();
+       ArrayList<Destino> destinos = new ArrayList(); 
+       
+      destinos.add(test.crearDestino("Facultad de Matematicas")); 
+      destinos.add(test.crearDestino("Facultad de Medicina")); 
+      destinos.add(test.crearDestino("Facultad de Derecho")); 
+      
+      test.setDestinos(destinos);
+      test.comprarBoleto();
     }
 }
