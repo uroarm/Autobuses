@@ -79,7 +79,7 @@ public class ControladorTest {
         System.out.println("Se ha comprado un asiento");
         System.out.println("Destino: " +  Destinos.get(destinoSeleccionado).getName());
         System.out.println("horario: " + Destinos.get(destinoSeleccionado).getCamiones().get(horaSeleccionado).getHoraSalida());
-        System.out.println("Asiento numero: " + (ocupados-1));
+        System.out.println("Asiento numero: " + (ocupados));
        Destinos.get(destinoSeleccionado).getCamiones().get(horaSeleccionado).getAsientos();  
        Destinos.get(destinoSeleccionado).getCamiones().get(horaSeleccionado).setAsientosOcupados(ocupados);
         
