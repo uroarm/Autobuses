@@ -180,6 +180,8 @@ public class ControladorVenta implements ActionListener{
                     //Logger.getLogger(ControladorVenta.class.getName()).log(Level.SEVERE, null, ex);
                     System.out.println("Cierre el documento para ser editado");
                     }
+                
+                 JOptionPane.showMessageDialog(null, "Cambio realiado con exito!");
             }
            
         }
