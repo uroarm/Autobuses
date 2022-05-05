@@ -76,11 +76,10 @@
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Elige el destino"/>
-                <StringItem index="1" value="Faultad de Matematicas"/>
-                <StringItem index="2" value="Facultad de Derecho"/>
-                <StringItem index="3" value="Facultad de Medicina"/>
+              <StringArray count="3">
+                <StringItem index="0" value="Faultad de Matematicas"/>
+                <StringItem index="1" value="Facultad de Derecho"/>
+                <StringItem index="2" value="Facultad de Medicina"/>
               </StringArray>
             </Property>
           </Properties>
@@ -113,12 +112,17 @@
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="5">
-                <StringItem index="0" value="Elige le horario"/>
-                <StringItem index="1" value="6:00"/>
-                <StringItem index="2" value="7:00"/>
-                <StringItem index="3" value="8:00"/>
-                <StringItem index="4" value="9:00"/>
+              <StringArray count="10">
+                <StringItem index="0" value="10:00"/>
+                <StringItem index="1" value="11:00"/>
+                <StringItem index="2" value="12:00"/>
+                <StringItem index="3" value="13:00"/>
+                <StringItem index="4" value="14:00"/>
+                <StringItem index="5" value="15:00"/>
+                <StringItem index="6" value="16:00"/>
+                <StringItem index="7" value="18:00"/>
+                <StringItem index="8" value="19:00"/>
+                <StringItem index="9" value="20:00"/>
               </StringArray>
             </Property>
           </Properties>
@@ -164,11 +168,10 @@
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Elige el destino"/>
-                <StringItem index="1" value="Faultad de Matematicas"/>
-                <StringItem index="2" value="Facultad de Derecho"/>
-                <StringItem index="3" value="Facultad de Medicina"/>
+              <StringArray count="3">
+                <StringItem index="0" value="Faultad de Matematicas"/>
+                <StringItem index="1" value="Facultad de Derecho"/>
+                <StringItem index="2" value="Facultad de Medicina"/>
               </StringArray>
             </Property>
           </Properties>
@@ -201,12 +204,17 @@
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="5">
-                <StringItem index="0" value="Elige el horario"/>
-                <StringItem index="1" value="6:00"/>
-                <StringItem index="2" value="7:00"/>
-                <StringItem index="3" value="8:00"/>
-                <StringItem index="4" value="9:00"/>
+              <StringArray count="10">
+                <StringItem index="0" value="10:00"/>
+                <StringItem index="1" value="11:00"/>
+                <StringItem index="2" value="12:00"/>
+                <StringItem index="3" value="13:00"/>
+                <StringItem index="4" value="14:00"/>
+                <StringItem index="5" value="15:00"/>
+                <StringItem index="6" value="16:00"/>
+                <StringItem index="7" value="18:00"/>
+                <StringItem index="8" value="19:00"/>
+                <StringItem index="9" value="20:00"/>
               </StringArray>
             </Property>
           </Properties>

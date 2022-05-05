@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import java.awt.event.ActionListener;
+import javax.swing.JTextField;
 /**
  *
  * @author Intel
@@ -41,10 +42,7 @@ public class BoletoVendido extends javax.swing.JFrame implements ActionListener{
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        DestinoTexto.setBackground(new java.awt.Color(255, 255, 255));
-        DestinoTexto.setForeground(new java.awt.Color(255, 255, 255));
         DestinoTexto.setToolTipText("");
-        DestinoTexto.setCaretColor(new java.awt.Color(0, 0, 0));
         DestinoTexto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DestinoTextoActionPerformed(evt);
@@ -59,10 +57,7 @@ public class BoletoVendido extends javax.swing.JFrame implements ActionListener{
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel6.setText("Horario:");
 
-        HorarioTexto.setBackground(new java.awt.Color(255, 255, 255));
-        HorarioTexto.setForeground(new java.awt.Color(255, 255, 255));
         HorarioTexto.setToolTipText("");
-        HorarioTexto.setCaretColor(new java.awt.Color(0, 0, 0));
         HorarioTexto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HorarioTextoActionPerformed(evt);
@@ -195,6 +190,15 @@ public class BoletoVendido extends javax.swing.JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         
     }
+
+    public JTextField getDestinoTexto() {
+        return DestinoTexto;
+    }
+
+    public JTextField getHorarioTexto() {
+        return HorarioTexto;
+    }
   
+    
    
 }
