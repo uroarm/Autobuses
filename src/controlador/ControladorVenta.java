@@ -7,9 +7,13 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import modelo.Csvwriter;
 import modelo.Destino;
 import modelo.Ubicaciones;
 import modelo.Ticket;
@@ -87,7 +91,13 @@ public class ControladorVenta implements ActionListener{
                     destinoSeleccionado = 0;
                     horaSeleccionada = 0;
                     
-                          
+                    Csvwriter writer = new Csvwriter();
+            try {       
+                writer.write(destinos);
+            } catch (IOException ex) {
+                //Logger.getLogger(ControladorVenta.class.getName()).log(Level.SEVERE, null, ex);
+                System.out.println("Cierre el documento para ser editado");
+            }
         }
         
         //salir de la ventana del boleto vendido
@@ -111,9 +121,13 @@ public class ControladorVenta implements ActionListener{
             for (int i=0; i<destinos.size();i++){
                 if(destinos.get(i).getName() == vistaCambio.listaDestinoActual.getSelectedItem().toString()){
                     destinoCambio = i;
-                }
+                    break;
+                } 
+            }
+            
+            for (int i=0;i<destinos.size();i++){
                 if(destinos.get(i).getName() == vistaCambio.listaDestinoCambio.getSelectedItem().toString()){
-                    nuevoDestino = 1;
+                    nuevoDestino = i;
                 }
             }
             
@@ -138,7 +152,6 @@ public class ControladorVenta implements ActionListener{
                 JOptionPane.showMessageDialog(null, "No hay ningun asiento ocupado en este viaje");
             }else{
             
-              
                 ocupados--;
                 destinos.get(destinoCambio).getCamiones().get(horaCambio).setAsientosOcupados(ocupados);
                 System.out.println("antiguo destino  " + destinos.get(destinoCambio).getName() + "Con horario de: " +  destinos.get(destinoCambio).getCamiones().get(horaCambio).getHoraSalida());
@@ -147,7 +160,8 @@ public class ControladorVenta implements ActionListener{
                 
                     
                  //haciendo el nuevo cambio 
-                 ocupados = destinos.get(nuevoDestino).getCamiones().get(nuevaHora).getAsientosOcupados();
+                 ocupados = destinos.get(nuevoDestino).getCamiones().get(nuevaHora).getAsientosOcupados();;
+                 System.out.println("nuevo destino " + nuevoDestino + " Nueva hora" + nuevaHora);
                 if(ocupados == TOTALASIENTOS){
                     JOptionPane.showMessageDialog(null, "El viaje está lleno, por favor seleccione otro");
                 }else{
@@ -158,6 +172,14 @@ public class ControladorVenta implements ActionListener{
                    System.out.println("asientos ocupados: " + destinos.get(nuevoDestino).getCamiones().get(nuevaHora).getAsientosOcupados());
                   
                 }
+                
+            Csvwriter writer = new Csvwriter();
+                try {       
+                    writer.write(destinos);
+                } catch (IOException ex) {
+                    //Logger.getLogger(ControladorVenta.class.getName()).log(Level.SEVERE, null, ex);
+                    System.out.println("Cierre el documento para ser editado");
+                    }
             }
            
         }

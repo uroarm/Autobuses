@@ -68,7 +68,7 @@ public class VentaDeBoleto extends javax.swing.JFrame {
         jPanel1.add(BotonCambiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(832, 464, 180, 55));
 
         ListaDestino.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ListaDestino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Faultad de Matematicas", "Facultad de Derecho", "Facultad de Medicina" }));
+        ListaDestino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Facultad de Matematicas", "Facultad de Derecho", "Facultad de Medicina" }));
         jPanel1.add(ListaDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(746, 116, 271, 40));
 
         ListaHorario.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N

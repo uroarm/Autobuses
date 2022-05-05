@@ -10,6 +10,8 @@ import controlador.ControladorVenta;
 import java.io.IOException;
 import java.util.ArrayList;
 import modelo.Camion;
+import modelo.Csvreader;
+import modelo.Csvwriter;
 import modelo.Destino;
 import vista.BoletoVendido;
 import vista.CambioDeBoleto;
@@ -25,13 +27,17 @@ public class Test {
         
         
         ControladorTest test = new ControladorTest();
-       ArrayList<Destino> destinos = new ArrayList(); 
-       
-       
+        ArrayList<Destino> destinos = new ArrayList(); 
+        Csvreader reader = new Csvreader();
+        
+      //  Csvwriter writer = new Csvwriter();
+       // writer.write(destinos);
+      
       destinos.add(test.crearDestino("Facultad de Matematicas")); 
       destinos.add(test.crearDestino("Facultad de Derecho")); 
       destinos.add(test.crearDestino("Facultad de Medicina")); 
-      
+      destinos = reader.read(destinos);
+                    
       VentaDeBoleto vistaVenta = new VentaDeBoleto();
       CambioDeBoleto vistaCambio = new CambioDeBoleto();
       BoletoVendido vistaVendido = new BoletoVendido();
