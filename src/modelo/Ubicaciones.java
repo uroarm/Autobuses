@@ -21,6 +21,10 @@ ArrayList <Destino> Destinos = new ArrayList();
     public ArrayList<Destino> getDestinos() {
         return Destinos;
     }
+
+    public void setDestinos(ArrayList<Destino> Destinos) {
+        this.Destinos = Destinos;
+    }
    
     
 }

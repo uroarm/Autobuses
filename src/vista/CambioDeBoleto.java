@@ -60,7 +60,7 @@ public class CambioDeBoleto extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 80, -1, -1));
 
         listaDestinoActual.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        listaDestinoActual.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige el destino", "Faultad de Matematicas", "Facultad de Derecho", "Facultad de Medicina" }));
+        listaDestinoActual.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Faultad de Matematicas", "Facultad de Derecho", "Facultad de Medicina" }));
         jPanel1.add(listaDestinoActual, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, 290, 40));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -68,7 +68,7 @@ public class CambioDeBoleto extends javax.swing.JFrame {
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, -1, -1));
 
         listaHorarioActual.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        listaHorarioActual.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige le horario", "6:00", "7:00", "8:00", "9:00" }));
+        listaHorarioActual.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "18:00", "19:00", "20:00" }));
         jPanel1.add(listaHorarioActual, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 190, 290, 40));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
@@ -80,7 +80,7 @@ public class CambioDeBoleto extends javax.swing.JFrame {
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, -1, -1));
 
         listaDestinoCambio.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        listaDestinoCambio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige el destino", "Faultad de Matematicas", "Facultad de Derecho", "Facultad de Medicina" }));
+        listaDestinoCambio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Faultad de Matematicas", "Facultad de Derecho", "Facultad de Medicina" }));
         jPanel1.add(listaDestinoCambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 320, 290, 40));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -88,7 +88,7 @@ public class CambioDeBoleto extends javax.swing.JFrame {
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, -1, -1));
 
         listaHorarioCambio.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        listaHorarioCambio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige el horario", "6:00", "7:00", "8:00", "9:00" }));
+        listaHorarioCambio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "18:00", "19:00", "20:00" }));
         jPanel1.add(listaHorarioCambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 400, 290, 40));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ticket.png"))); // NOI18N

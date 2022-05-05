@@ -68,11 +68,11 @@ public class VentaDeBoleto extends javax.swing.JFrame {
         jPanel1.add(BotonCambiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(832, 464, 180, 55));
 
         ListaDestino.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ListaDestino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige el destino", "Faultad de Matematicas", "Facultad de Derecho", "Facultad de Medicina" }));
+        ListaDestino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Faultad de Matematicas", "Facultad de Derecho", "Facultad de Medicina" }));
         jPanel1.add(ListaDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(746, 116, 271, 40));
 
         ListaHorario.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ListaHorario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige el horario", "6:00", "7:00", "8:00", "9:00" }));
+        ListaHorario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "18:00", "19:00", "20:00" }));
         jPanel1.add(ListaHorario, new org.netbeans.lib.awtextra.AbsoluteConstraints(746, 203, 271, 40));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
